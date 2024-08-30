@@ -1,5 +1,10 @@
 #!/ban/bash
 
+# This script copies the SLGA data into the Python container to extract a CSV version of the original .xlsx file.
+
+# Author: Josiah Sparks
+# Date: 29 Aug 2024
+
 CONTAINER_NAME="python-runner"
 FILE_NAME=EDGE_GEOCODE_PUBLICSCH_1718
 

@@ -1,5 +1,11 @@
 #!/ban/bash
 
+# This script creates the PostgreSQL container
+# The SQL script, mk_tbl.sql, creates the schemas data_schema and ref_schema
+
+# Author: Josiah Sparks
+# Date: 29 Aug 2024
+
 CONTAINER_NAME=postgres-db
 POSTGRE_USR=postgres
 POSTGRE_PWD=pwd123

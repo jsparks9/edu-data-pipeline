@@ -1,7 +1,16 @@
 #!/ban/bash
 
+# This script executes PostgreSQL scripts that perform database normalization and optimization. 
+
+# Author: Josiah Sparks
+# Date: 29 Aug 2024
+
 CONTAINER_NAME=postgres-db
+POSTGRE_USR=postgres
+
 HMDA_SCRIPT="optimize_hmda.sql"
+ACLF_SCH_SCRIPT="optimize_aclf_and_sch.sql"
+SAIPE_SDGR_SCRIPT="optimize_saipe_and_sdgr.sql"
 
 run_in_container() {
   local SCRIPT_NAME=$1
@@ -16,4 +25,12 @@ run_in_container() {
 
 echo "Optimizing HMDA table"
 run_in_container $HMDA_SCRIPT
+
+echo "Optimizing ACLF and SCH tables"
+run_in_container $ACLF_SCH_SCRIPT
+
+echo "Optimizing SAIPE and SDGR tables"
+run_in_container $SAIPE_SDGR_SCRIPT
+
+
 

@@ -1,5 +1,10 @@
 #!/ban/bash
 
+# This script unpacks the raw data and prepares the files to be imported into PostgreSQL. This is achieved by removing excess newlines and removing enpty quote entries. PostgreSQL cannot interpret "" as null, forcing columns with such empty quotes to be varchar. So, removing empty quotes allows importing some columns as numeric types, speeding up database normalization and data processing later. 
+
+# Author: Josiah Sparks
+# Date: 29 Aug 2024
+
 RAW_DIR="./Raw Data"
 
 unzip "$RAW_DIR/2017-18-crdc-data.zip" -d "./Data/CRDC"
@@ -29,4 +34,3 @@ mv "$input_file" "$temp_file"
 awk '{gsub(/,""/, ","); print}' "$temp_file" > "$input_file"
 
 rm "$temp_file"
-

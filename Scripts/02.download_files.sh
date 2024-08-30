@@ -1,5 +1,10 @@
 #!/ban/bash
 
+# This script downloads necessary data from online sources
+
+# Author: Josiah Sparks
+# Date: 29 Aug 2024
+
 RAW_DIR="./Raw Data"
 CRDC_1718_URL="https://civilrightsdata.ed.gov/assets/ocr/docs/2017-18-crdc-data.zip"
 SAIPE_URL="https://www2.census.gov/programs-surveys/saipe/datasets/2017/2017-school-districts/ussd17.xls"

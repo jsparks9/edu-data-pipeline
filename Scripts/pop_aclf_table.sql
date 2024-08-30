@@ -1,20 +1,20 @@
 SET search_path TO data_schema;
 
 CREATE TABLE aclf_housing (
-    state CHAR(2),
-    county CHAR(3),
+    state SMALLINT,
+    county SMALLINT,
     tract CHAR(7),
-    block CHAR(4),
-    block_geoid CHAR(15),
-    total_housing_units INTEGER,
-    total_group_quarters INTEGER,
-    total_correctional_facilities_for_adults INTEGER,
-    total_juvenile_facilities INTEGER,
-    total_nursing_facilities_skilled_nursing_facilities INTEGER,
-    total_other_institutional_facilities INTEGER,
-    total_college_university_student_housing INTEGER,
-    total_military_quarters INTEGER,
-    total_other_noninstitutional_facilities INTEGER
+    block SMALLINT,
+    block_geoid BIGINT,
+    total_housing_units SMALLINT,
+    total_group_quarters SMALLINT,
+    total_correctional_facilities_for_adults SMALLINT,
+    total_juvenile_facilities SMALLINT,
+    total_nursing_facilities_skilled_nursing_facilities SMALLINT,
+    total_other_institutional_facilities SMALLINT,
+    total_college_university_student_housing SMALLINT,
+    total_military_quarters SMALLINT,
+    total_other_noninstitutional_facilities SMALLINT
 );
 
 
