@@ -1,5 +1,10 @@
 #!/ban/bash
 
+# This script converts multiple .xlsx files to CSV. 
+
+# Author: Josiah Sparks
+# Date: 29 Aug 2024
+
 CONTAINER_NAME="python-runner"
 file_names=( \
 "grf17_lea_tract" \

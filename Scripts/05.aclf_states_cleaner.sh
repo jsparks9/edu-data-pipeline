@@ -1,5 +1,10 @@
 #!/ban/bash
 
+# In this script, the headers of each of the state files in the ACLF dataset are modified to remove invalid characters including whitespaces ( ), hyphens (-), and forward slashes (/). The column headers are also converted to lowercase. 
+
+# Author: Josiah Sparks
+# Date: 29 Aug 2024
+
 INPUT_DIR="./Raw Data/ACLF_States"
 OUTPUT_DIR="./Data/ACLF_States"
 states=( \

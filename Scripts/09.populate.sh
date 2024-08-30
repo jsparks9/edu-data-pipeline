@@ -1,5 +1,10 @@
 #!/ban/bash
 
+# This script copies the extracted and prepared data into the PostgreSQL container and executes a list of scripts that create tables and utilize the COPY command in PostgreSQL to move the data from CSV files into the appropriate tables. 
+
+# Author: Josiah Sparks
+# Date: 29 Aug 2024
+
 CONTAINER_NAME=postgres-db
 LEA_SCRIPT="pop_lea_tables.sql"
 SCH_SCRIPT="pop_sch_tables.sql"
@@ -7,7 +12,7 @@ ED_SCRIPT="pop_ed_tables.sql"
 SAIPE_SCRIPT="pop_saipe_table.sql"
 SLGA_SCRIPT="pop_slga_table.sql"
 HMDA_SCRIPT="pop_hmda_table.sql"
-SDGR_SCRIPT="pop_sdgr_table.sql"
+SDGR_SCRIPT="pop_sdgr_tables.sql"
 ACLF_SCRIPT="pop_aclf_table.sql"
 
 echo "Copying data into container..."
@@ -42,7 +47,7 @@ run_in_container $SLGA_SCRIPT
 echo "Populating HMDA table"
 run_in_container $HMDA_SCRIPT
 
-echo "Populating SDGR table"
+echo "Populating SDGR tables"
 run_in_container $SDGR_SCRIPT
 
 echo "Populating ACLF table"

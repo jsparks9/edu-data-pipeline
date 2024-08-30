@@ -5,8 +5,8 @@ CREATE TABLE saipe_ussd17 (
     state_FIPS VARCHAR(2),
     DistrictID VARCHAR(5),
     NameSchoolDistrict VARCHAR(81),
-    TotalPopulation VARCHAR(7),
-    Population5_17 VARCHAR(7),
-    Population5_17InPoverty VARCHAR(6)
+    TotalPopulation INTEGER,
+    Population5_17 INTEGER,
+    Population5_17InPoverty INTEGER
 );
 COPY saipe_ussd17 FROM '/home/Data/ussd17.csv' DELIMITER ',' CSV HEADER ENCODING 'windows-1251';

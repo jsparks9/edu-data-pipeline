@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# This script downloads ACLF data by iterating through a list of states
+
+# Author: Josiah Sparks
+# Date: 29 Aug 2024
+
 OUTPUT_DIR="./Raw Data/ACLF_States"
 states=( \
 "01_Alabama" \
