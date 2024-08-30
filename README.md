@@ -10,7 +10,7 @@ Start Docker Desktop
 Run Run_Py_Setup.sh
 This creates the Docker image and takes 2-3 minutes
 ### Step 3
-Build the Python image using either from command line or using the Dev Container plugin for VSCode. 
+Open the Py VSC Project folder in VS Code, reopen in container when prompted. This is using the Dev Container plugin for VSCode. 
 ### Step 4
 Run Run_SQL_Setup.sh
 This takes about 20-25 minutes
