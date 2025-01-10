@@ -18,4 +18,4 @@ This creates the Docker image and takes 2-3 minutes
 Open the Py VSC Project folder in VS Code, reopen in container when prompted. This is using the Dev Container plugin for VSCode. 
 ### Step 4
 Run Run_SQL_Setup.sh
-This takes about 20-25 minutes
+This can take up to 20-25 minutes
